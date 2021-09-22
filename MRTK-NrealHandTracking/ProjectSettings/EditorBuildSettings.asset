@@ -4,5 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Nreal/Scenes/Sample.unity
+    guid: 3eedce70d8e0f484f9ac3521875f963c
+  - enabled: 1
+    path: Assets/Nreal/Scenes/SampleController.unity
+    guid: 1af26c8db9851a3478759fa3d7fe2bae
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d488ac3cc533fdb449e7ea240ce764ef,
+      type: 2}

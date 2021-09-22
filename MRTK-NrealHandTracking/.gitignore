@@ -112,7 +112,3 @@ Nuget.config*
 # Other files #
 # =========== #
 .DS_Store
-
-
-.idea
-Assembly-CSharp.csproj.meta

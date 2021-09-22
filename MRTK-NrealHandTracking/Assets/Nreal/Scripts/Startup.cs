@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEditor;
 using System.Threading.Tasks;
 
+#if UNITY_EDITOR
+
 [InitializeOnLoad]
 public static class Startup
 {
@@ -23,10 +25,12 @@ public static class Startup
         if (!StartUpData.instance.IsStartUp())
             return;
         //Force loading of NRSK folder at Unity Editor startup
-        string pathRsc = "Assets/NRSDK";
-        AssetDatabase.ImportAsset(pathRsc, ImportAssetOptions.ForceUpdate | ImportAssetOptions.ImportRecursive);
-        Debug.Log("load nrsdk");
+        //string pathRsc = "Assets/NRSDK";
+        //AssetDatabase.ImportAsset(pathRsc, ImportAssetOptions.ForceUpdate | ImportAssetOptions.ImportRecursive);
+        //Debug.Log("load nrsdk");
 
     }
    
 }
+
+#endif
